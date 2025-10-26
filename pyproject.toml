@@ -21,11 +21,3 @@ dependencies = [
     "opencv-python (>=4.11.0.86,<5.0.0.0)",
     "powerlaw (>=1.5,<2.0)"
 ]
-
-[tool.poetry]
-packages = [{include = "python_scripts", from = "src"}]
-
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
