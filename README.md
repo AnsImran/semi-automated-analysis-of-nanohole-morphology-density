@@ -1,13 +1,13 @@
 ## Semi-Automatic Nanohole Morphology Pipeline
 
-This repository contains the tooling I built during my internship at the Institut des Nanosciences de Paris (INSP), Sorbonne University, for the Coupled Quantum Dots for Quantum Computation project. The goal is to turn raw AFM height maps of molecular-beam-epitaxy (MBE) grown nanoholes into reliable depth, rim-area, and shape statistics so we can correlate growth parameters with resulting quantum-dot-ready morphologies. The full internship report that motivates the design choices is available at https://drive.google.com/file/d/1wkk0U2tV2VnF8PwFoKwcEoMVh8tzEAGN/view.
+This repository contains the tooling I built during my internship at the Institut des Nanosciences de Paris (INSP), Sorbonne University, Paris, for the Coupled Quantum Dots for Quantum Computation project. The goal is to turn raw AFM height maps of nanoholes (fabricated using molecular-beam-epitaxy (MBE) & Local Droplet Etching (LDE)) into reliable depth, rim-area, and shape statistics so we can correlate growth/fabrication parameters with resulting quantum-dot-ready morphologies. The full internship report that motivates the design choices is available at https://drive.google.com/file/d/1wkk0U2tV2VnF8PwFoKwcEoMVh8tzEAGN/view.
 
 The pipeline is semi-automatic on purpose: after experimenting with fully automated approaches (documented in the report), the mixed manual/automatic flow turned out to be the most robust and least error-prone for large AFM datasets. It reduces weeks of manual analysis down to a day or two, even for hundreds of scans, while still letting the researcher make the critical visual decisions that algorithms routinely miss.
 
 ### Technical highlights
 
 - Built in Python with NumPy, Pandas, SciPy, Matplotlib, Plotly, and related scientific data analysis stacks to keep the workflow reproducible.
-- Designed as a resilient data analysis pipeline (yes, a deliberate data anlysis pipeline as well) for AFM height maps captured during molecular beam epitaxy (MBE) experiments and subsequent clean room validation.
+- Designed as a resilient data analysis pipeline (yes, a deliberate data analysis pipeline as well) for AFM height maps captured during Atomic Force Microscopy Scans.
 - Focused on high-throughput yet human-aware scientific data analysis so researchers can iterate growth parameters quickly while maintaining traceability.
 
 ---
@@ -102,7 +102,7 @@ The sample file in `files/dict_clicked_points_20250630_124212.json` is a good re
 
 ### Why semi-automatic?
 
-- AFM scans of droplet-etched nanoholes routinely contain drift, debris, and partial features that confuse fully automatic segmentation. Manual confirmation of center points and rim placement eliminates those failure modes.
+- AFM scans of local droplet-etched nanoholes routinely contain drift, debris, and partial features - to name a few -that confuse fully automatic segmentation. Manual confirmation of center points and rim placement eliminates those failure modes.
 - The scripts still batch the heavy lifting: statistics update live as soon as you validate a hole, and aggregate metrics are ready for plotting without copy/paste gymnastics.
 - Compared to doing everything by hand in Gwyddion or similar software, this workflow has already cut our analysis time from weeks to **1-2 days** per growth campaign while delivering higher-confidence morphology readouts for quantum-dot design.
 
