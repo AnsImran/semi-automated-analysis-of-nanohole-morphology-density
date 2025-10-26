@@ -1,0 +1,7 @@
+numpy
+matplotlib
+json
+os
+datetime
+scipy
+mpl_toolkits
