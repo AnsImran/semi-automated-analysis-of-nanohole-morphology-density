@@ -121,7 +121,7 @@ For a deeper dive into the rejected approaches (purely automatic clustering, wat
 
 ### Acknowledgements
 
-- INSP Sorbonne Paris - Coupled Quantum Dots for Quantum Computation group.
+- INSP Sorbonne Paris - [Paola Atkinson](https://w3.insp.upmc.fr/en/research/research-teams/nanostructures-growth-quantum-effects-and-magnetism/growth-and-properties-of-hybrid-thin-film-systems-mbe-growth-of-quantum-dot-devices/).
 - Everyone who helped test fully automatic approaches (documented in the report) before settling on this robust semi-automatic pipeline.
 
 Feel free to reach out via ansimran18@gmail.com for questions, suggestions, or collaboration ideas.
