@@ -1,0 +1,35 @@
+﻿{
+  "defaults": {
+    "clicked_points_file": "clicked_points_20250630_124212.json",
+    "files_directory": "./files",
+    "scan_size_pixels": 2048,
+    "scan_area_square_micrometers": 25,
+    "nominal_scan_length_nanometers": 5000
+  },
+  "presets": {
+    "1024": {
+      "square_size_for_lowest_point_finder": 20,
+      "big_square_size_for_highest_point_finder": 41,
+      "small_square_size_for_highest_point_finder": 5,
+      "length_of_line_for_height_profile_extractors": 41,
+      "outer_square_length_for_annular_square_region_extractor": 102,
+      "inner_square_length_for_annular_square_region_extractor": 60
+    },
+    "2048": {
+      "square_size_for_lowest_point_finder": 40,
+      "big_square_size_for_highest_point_finder": 81,
+      "small_square_size_for_highest_point_finder": 11,
+      "length_of_line_for_height_profile_extractors": 81,
+      "outer_square_length_for_annular_square_region_extractor": 204,
+      "inner_square_length_for_annular_square_region_extractor": 120
+    },
+    "fallback": {
+      "square_size_for_lowest_point_finder": 40,
+      "big_square_size_for_highest_point_finder": 81,
+      "small_square_size_for_highest_point_finder": 11,
+      "length_of_line_for_height_profile_extractors": 81,
+      "outer_square_length_for_annular_square_region_extractor": 204,
+      "inner_square_length_for_annular_square_region_extractor": 120
+    }
+  }
+}
