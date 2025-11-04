@@ -1,0 +1,32 @@
+{
+    "20250320_22R033__250321_Z Height_Forward_014.npy": {
+        "clicked_points": [
+            [
+                407,
+                589
+            ],
+            [
+                704,
+                1386
+            ],
+            [
+                1125,
+                132
+            ]
+        ],
+        "total_number_of_clicked_points": 3
+    },
+    "20250320_22R033__250321_Z Height_Forward_016.npy": {
+        "clicked_points": [
+            [
+                1431,
+                105
+            ],
+            [
+                628,
+                646
+            ]
+        ],
+        "total_number_of_clicked_points": 2
+    }
+}
